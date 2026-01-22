@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Inventory Management System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inventory Management System</h1>
+      <p>Product Listing</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="list.html">Products</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Product Inventory List</h2>
+        <p>
+          Below is a complete list of all products currently in inventory. Check
+          details about each product including stock levels, pricing, and last
+          updated information.
+        </p>
+      </section>
+
+      <section>
+        <h3>Filter & Search</h3>
+        <form style="max-width: none; margin: 0; padding: 0">
+          <div
+            style="
+              display: inline-block;
+              width: 48%;
+              margin-right: 2%;
+              vertical-align: top;
+            "
+          >
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+              <option value="">All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="furniture">Office Furniture</option>
+              <option value="supplies">Supplies</option>
+              <option value="software">Software Licenses</option>
+              <option value="networking">Networking Equipment</option>
+            </select>
+          </div>
+
+          <div style="display: inline-block; width: 48%; vertical-align: top">
+            <label for="stock">Stock Status:</label>
+            <select id="stock" name="stock">
+              <option value="">All Items</option>
+              <option value="in-stock">In Stock</option>
+              <option value="low-stock">Low Stock</option>
+              <option value="out-stock">Out of Stock</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <!-- Products Table -->
+      <section>
+        <h3>All Products</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Unit Price</th>
+              <th>Stock Quantity</th>
+              <th>Reorder Level</th>
+              <th>Status</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PRD-001</td>
+              <td>Dell XPS 13 Laptop</td>
+              <td>Electronics</td>
+              <td>$1,299.00</td>
+              <td>45</td>
+              <td>20</td>
+              <td>In Stock</td>
+              <td>Jan 20, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-002</td>
+              <td>Ergonomic Office Chair</td>
+              <td>Office Furniture</td>
+              <td>$299.99</td>
+              <td>12</td>
+              <td>25</td>
+              <td>Low Stock</td>
+              <td>Jan 19, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-003</td>
+              <td>Wireless Mouse</td>
+              <td>Electronics</td>
+              <td>$29.99</td>
+              <td>156</td>
+              <td>50</td>
+              <td>In Stock</td>
+              <td>Jan 21, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-004</td>
+              <td>A4 Paper Ream (500 sheets)</td>
+              <td>Supplies</td>
+              <td>$5.99</td>
+              <td>0</td>
+              <td>100</td>
+              <td>Out of Stock</td>
+              <td>Jan 15, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-005</td>
+              <td>Microsoft Office 365 License</td>
+              <td>Software Licenses</td>
+              <td>$69.99</td>
+              <td>67</td>
+              <td>30</td>
+              <td>In Stock</td>
+              <td>Jan 18, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-006</td>
+              <td>4K USB-C Monitor</td>
+              <td>Electronics</td>
+              <td>$599.00</td>
+              <td>23</td>
+              <td>15</td>
+              <td>In Stock</td>
+              <td>Jan 20, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-007</td>
+              <td>Network Switch (48-port)</td>
+              <td>Networking Equipment</td>
+              <td>$1,899.00</td>
+              <td>5</td>
+              <td>8</td>
+              <td>Low Stock</td>
+              <td>Jan 17, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-008</td>
+              <td>Desk Organizer Set</td>
+              <td>Office Furniture</td>
+              <td>$49.99</td>
+              <td>89</td>
+              <td>40</td>
+              <td>In Stock</td>
+              <td>Jan 19, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-009</td>
+              <td>USB-C Cable (2-pack)</td>
+              <td>Electronics</td>
+              <td>$19.99</td>
+              <td>234</td>
+              <td>100</td>
+              <td>In Stock</td>
+              <td>Jan 21, 2026</td>
+            </tr>
+            <tr>
+              <td>PRD-010</td>
+              <td>Adobe Creative Cloud License</td>
+              <td>Software Licenses</td>
+              <td>$54.99</td>
+              <td>32</td>
+              <td>20</td>
+              <td>In Stock</td>
+              <td>Jan 20, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Category Breakdown -->
+      <section>
+        <h2>Products by Category</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Total Products</th>
+              <th>In Stock</th>
+              <th>Low Stock</th>
+              <th>Out of Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Electronics</td>
+              <td>345</td>
+              <td>298</td>
+              <td>35</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Office Furniture</td>
+              <td>98</td>
+              <td>85</td>
+              <td>10</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Supplies</td>
+              <td>567</td>
+              <td>512</td>
+              <td>42</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Software Licenses</td>
+              <td>89</td>
+              <td>87</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Networking Equipment</td>
+              <td>46</td>
+              <td>38</td>
+              <td>6</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Inventory Info</h2>
+        <article>
+          <h3>Product Status Definitions</h3>
+          <ul>
+            <li>In Stock - Quantity is above reorder level</li>
+            <li>Low Stock - Quantity is below reorder level</li>
+            <li>Out of Stock - Quantity is zero</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Stock Management Tips</h3>
+          <ul>
+            <li>Review low-stock items regularly</li>
+            <li>Conduct periodic inventory audits</li>
+            <li>Update product information as prices change</li>
+            <li>Track supplier performance and lead times</li>
+            <li>Use FIFO method for perishable items</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Inventory Management System. All rights reserved.</p>
+      <p>Contact: support@inventory-system.com</p>
+    </footer>
+  </body>
+</html>

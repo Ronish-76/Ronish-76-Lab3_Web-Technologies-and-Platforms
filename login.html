@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Inventory Management System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inventory Management System</h1>
+      <p>Secure Login</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="list.html">Products</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="text-center">
+        <h2>User Login</h2>
+        <p>Please enter your credentials to access the dashboard</p>
+      </section>
+
+      <form>
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your.email@example.com"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <div style="margin: 15px 0">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember" style="display: inline; margin-top: 0"
+            >Remember me</label
+          >
+        </div>
+
+        <input type="submit" value="Login" />
+      </form>
+
+      <section style="max-width: 400px; margin: 20px auto; text-align: center">
+        <p><a href="#">Forgot your password?</a></p>
+        <p>Don't have an account? <a href="#">Register here</a></p>
+      </section>
+
+      <section style="max-width: 500px; margin: 30px auto">
+        <h3>Security Tips</h3>
+        <ul>
+          <li>Never share your password with anyone</li>
+          <li>Use a strong password with mixed characters</li>
+          <li>Log out when using a shared computer</li>
+          <li>Keep your login credentials confidential</li>
+          <li>Clear your browser cache after logout</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Inventory Management System. All rights reserved.</p>
+      <p>Contact: support@inventory-system.com</p>
+    </footer>
+  </body>
+</html>
